@@ -30,6 +30,8 @@ export default defineConfig(({mode}) => {
                if (id.includes('framer-motion')) return 'animation';
                if (id.includes('html2canvas') || id.includes('html-to-image')) return 'capture';
                if (id.includes('xlsx')) return 'excel';
+               if (id.includes('react-leaflet') || id.includes('leaflet')) return 'maps';
+               if (id.includes('lucide-react')) return 'icons';
                return 'vendor';
             }
           }
